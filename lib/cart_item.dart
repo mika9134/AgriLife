@@ -1,4 +1,3 @@
-
 import 'dart:async';
 import 'dart:math';
 
@@ -25,7 +24,7 @@ class CartItem extends StatelessWidget {
         ),
         child: const Icon(
           IconlyLight.delete,
-          color: Colors.white,
+          color: Color.fromARGB(255, 86, 3, 155),
           size: 25,
         ),
       ),
