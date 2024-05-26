@@ -153,7 +153,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 115, 255, 0)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 115, 255, 0)),
         useMaterial3: true,
         textTheme: GoogleFonts.nunitoTextTheme(),
       ),
