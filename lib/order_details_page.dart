@@ -16,7 +16,7 @@ class OrderDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final orderTimelines = ['Processing', 'Picking', 'Shipping', 'Delivered'];
+    final orderTimelines = ['Processing', 'Picking', 'Shipping', 'Delivering'];
     int activeStep = 2;
     return Scaffold(
       appBar: AppBar(

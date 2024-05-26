@@ -10,7 +10,7 @@ class OrdersPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tabs = ["Processing", "Picking", "Shipping", "Delivered"];
+    final tabs = ["Processing", "Picking", "Shipping", "Delivering"];
 
     return DefaultTabController(
       length: 4,
