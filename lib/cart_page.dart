@@ -19,7 +19,7 @@ class _CartPageState extends State<CartPage> {
 
   var htpsUri = Uri.parse(
       'http://checkout.chapa.co/checkout/web/payment/SC-mJB5eFHyTNcu'); //print(httpsUri); // https://dart.dev/guides/libraries/library-tour#numbers
-  @override
+  @override 
   Widget build(BuildContext context) {
     final total = cartItems
         .map((cartItem) => cartItem.price)

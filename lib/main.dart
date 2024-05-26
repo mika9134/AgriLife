@@ -158,6 +158,7 @@ class MainApp extends StatelessWidget {
         textTheme: GoogleFonts.nunitoTextTheme(),
       ),
       home: const OnboardingPage(),
-    );
+      
+     );
   }
 }
