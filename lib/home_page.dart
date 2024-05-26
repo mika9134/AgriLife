@@ -85,11 +85,11 @@ class _HomePageState extends State<HomePage> {
             label: "Home",
             activeIcon: Icon(IconlyBold.home),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(IconlyLight.call),
-            label: "Services",
-            activeIcon: Icon(IconlyBold.call),
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(IconlyLight.call),
+          //   label: "Services",
+          //   activeIcon: Icon(IconlyBold.call),
+          // ),
           BottomNavigationBarItem(
             icon: Icon(IconlyLight.buy),
             label: "Cart",
