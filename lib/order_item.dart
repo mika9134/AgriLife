@@ -1,4 +1,3 @@
-
 import 'package:ag/order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
@@ -21,7 +20,7 @@ class OrderItem extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: const BorderRadius.all(Radius.circular(10)),
-        side: BorderSide(color: Colors.grey.shade200),
+        side: BorderSide(color: const Color.fromARGB(255, 172, 52, 52)),
       ),
       elevation: 0.1,
       child: Padding(

@@ -1,4 +1,3 @@
-
 import 'package:ag/order.dart';
 import 'package:ag/date.dart';
 import 'package:ag/order_item.dart';
@@ -63,7 +62,7 @@ class OrderDetailsPage extends StatelessWidget {
             clipBehavior: Clip.antiAlias,
             shape: RoundedRectangleBorder(
               borderRadius: const BorderRadius.all(Radius.circular(10)),
-              side: BorderSide(color: Colors.grey.shade200),
+              side: BorderSide(color: const Color.fromARGB(255, 206, 81, 81)),
             ),
             elevation: 0.1,
             child: Padding(
@@ -110,7 +109,7 @@ class OrderDetailsPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 15),
                   Text(
-                    "Jessi Williams",
+                    "Lidya Samson",
                     style: theme.textTheme.titleSmall
                         ?.copyWith(fontWeight: FontWeight.bold),
                   ),
@@ -121,7 +120,7 @@ class OrderDetailsPage extends StatelessWidget {
                       SizedBox(width: 5),
                       Expanded(
                         child: Text(
-                          "6844 Hall Spring Suite 134\n East Annabury, OK 42291",
+                          "Addis Ababa Ayat, house no 5561",
                         ),
                       ),
                     ],
@@ -133,7 +132,7 @@ class OrderDetailsPage extends StatelessWidget {
                       SizedBox(width: 5),
                       Expanded(
                         child: Text(
-                          "233 5447 51048",
+                          "251 99346542",
                         ),
                       ),
                     ],

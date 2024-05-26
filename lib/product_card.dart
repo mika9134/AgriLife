@@ -1,4 +1,3 @@
-
 import 'package:ag/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
@@ -23,26 +22,26 @@ class ProductCard extends StatelessWidget {
         clipBehavior: Clip.antiAlias,
         shape: RoundedRectangleBorder(
           borderRadius: const BorderRadius.all(Radius.circular(10)),
-          side: BorderSide(color: Colors.grey.shade200),
+          side: BorderSide(color: Color.fromARGB(255, 241, 238, 39)),
         ),
-        elevation: 0.1,
+        //elevation: 0.1,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 120,
+              height: 1,
               alignment: Alignment.topRight,
               width: double.infinity,
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(product.image),
-                  fit: BoxFit.cover,
+                  //fit: BoxFit.cover,
                 ),
               ),
               child: SizedBox(
-                width: 30,
-                height: 30,
+                //width: 30,
+                //height: 30,
                 child: IconButton.filledTonal(
                   padding: EdgeInsets.zero,
                   onPressed: () {},
@@ -79,8 +78,8 @@ class ProductCard extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        width: 30,
-                        height: 30,
+                        //  width: 30,
+                        // height: 30,
                         child: IconButton.filled(
                           padding: EdgeInsets.zero,
                           onPressed: () {},

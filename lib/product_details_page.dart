@@ -1,4 +1,3 @@
-
 import 'package:ag/products.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +66,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
             widget.product.name,
             style: Theme.of(context).textTheme.titleLarge,
           ),
-          const SizedBox(height: 5),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
