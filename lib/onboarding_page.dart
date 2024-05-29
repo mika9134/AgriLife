@@ -1,4 +1,3 @@
-
 import 'package:ag/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -17,19 +16,22 @@ class OnboardingPage extends StatelessWidget {
             children: [
               const Spacer(),
               ConstrainedBox(
-        //          body: Center(
-        
-        // child: Image(
-        //   image: AssetImage('/C:/flutter/flutter/packages/flutter/lib/ag/assets/o.jpg'),
-        // )
+                //          body: Center(
+
+                // child: Image(
+                //   image: AssetImage('/C:/flutter/flutter/packages/flutter/lib/ag/assets/o.jpg'),
+                // )
                 constraints: const BoxConstraints(maxWidth: 380),
                 child: const Image(
-                  image: AssetImage('/C:/flutter/Agrilife/assets/o.jpg') ,
-                  ),
+                  image: AssetImage('/C:/vsRepo/Agrilife/assets/o.jpg'),
+                ),
               ),
               const Spacer(),
-              Text('Welcome to Agriplant',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
+              Text('Welcome to AgriLife',
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge
+                      ?.copyWith(fontWeight: FontWeight.bold)),
               const Padding(
                 padding: EdgeInsets.only(top: 30, bottom: 30),
                 child: Text(
@@ -40,7 +42,8 @@ class OnboardingPage extends StatelessWidget {
               /**/
               FilledButton.tonalIcon(
                 onPressed: () {
-                  Navigator.of(context).pushReplacement(CupertinoPageRoute(builder: (context) => const HomePage()));
+                  Navigator.of(context).pushReplacement(CupertinoPageRoute(
+                      builder: (context) => const HomePage()));
                 },
                 icon: const Icon(IconlyLight.login),
                 label: const Text("Continue with Google"),

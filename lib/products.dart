@@ -1,4 +1,3 @@
-
 import '/product.dart';
 
 List<Product> products = [
@@ -15,7 +14,7 @@ List<Product> products = [
     name: "Fresh Fruits",
     description:
         "Indulge in the natural sweetness and goodness of our handpicked assortment of fresh fruits. Bursting with flavors and packed with nutrients, these delectable treats are ect for snacking, cooking, or adding a vibrant touch to your meals.",
-    image: '/C:/flutter/Agrilife/assets/seed.jfif',
+    image: '/C:/vsRepo/Agrilife/assets/o.jpg',
     price: 9.99,
     unit: 'kg',
     rating: 3.86,
