@@ -19,7 +19,7 @@ class ExplorePage extends StatelessWidget {
                 const Expanded(
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: "Search here...",
+                      hintText: "Search here for something....",
                       isDense: true,
                       contentPadding: EdgeInsets.all(12.0),
                       border: OutlineInputBorder(
