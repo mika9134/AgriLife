@@ -1,4 +1,3 @@
-
 import 'package:ag/products.dart';
 import 'package:ag/product_card.dart';
 import 'package:flutter/material.dart';
@@ -43,7 +42,8 @@ class ExplorePage extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 12),
-                  child: IconButton.filled(onPressed: () {}, icon: const Icon(IconlyLight.filter)),
+                  child: IconButton.filled(
+                      onPressed: () {}, icon: const Icon(IconlyLight.filter)),
                 ),
               ],
             ),
@@ -68,11 +68,15 @@ class ExplorePage extends StatelessWidget {
                           children: [
                             Text(
                               "Free consultation",
-                              style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleLarge!
+                                  .copyWith(
                                     color: Colors.green.shade700,
                                   ),
                             ),
-                            const Text("Get free support from our customer service"),
+                            const Text(
+                                "Get free support from our customer service"),
                             FilledButton(
                               onPressed: () {},
                               child: const Text("Call now"),
@@ -81,7 +85,7 @@ class ExplorePage extends StatelessWidget {
                         ),
                       ),
                       Image.asset(
-                        'assets/contact_us.png',
+                        '/C:/vsRepo/Agrilife/assets/contact_us.png',
                         width: 140,
                       )
                     ],

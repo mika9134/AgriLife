@@ -16,14 +16,10 @@ class OnboardingPage extends StatelessWidget {
             children: [
               const Spacer(),
               ConstrainedBox(
-                //          body: Center(
-
-                // child: Image(
-                //   image: AssetImage('/C:/flutter/flutter/packages/flutter/lib/ag/assets/o.jpg'),
-                // )
-                constraints: const BoxConstraints(maxWidth: 380),
+                constraints: const BoxConstraints(maxWidth: 460),
                 child: const Image(
-                  image: AssetImage('/C:/vsRepo/Agrilife/assets/o.jpg'),
+                  image:
+                      AssetImage('/C:/vsRepo/Agrilife/assets/onboarding.png'),
                 ),
               ),
               const Spacer(),

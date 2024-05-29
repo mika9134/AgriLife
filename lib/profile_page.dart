@@ -24,13 +24,13 @@ class ProfilePage extends StatelessWidget {
           ),
           Center(
             child: Text(
-              "Jessi Williams",
+              "Lidu",
               style: Theme.of(context).textTheme.titleMedium,
             ),
           ),
           Center(
             child: Text(
-              "jessiwills@gmail.com",
+              "Lidu20@gmail.com",
               style: Theme.of(context).textTheme.bodySmall,
             ),
           ),

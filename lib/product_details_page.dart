@@ -1,4 +1,4 @@
-import 'package:ag/products.dart';
+import '/products.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
@@ -51,7 +51,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
         padding: const EdgeInsets.all(16),
         children: [
           Container(
-            height: 250,
+            height: 100,
             width: double.infinity,
             margin: const EdgeInsets.only(bottom: 16),
             decoration: BoxDecoration(
@@ -66,7 +66,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
             widget.product.name,
             style: Theme.of(context).textTheme.titleLarge,
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

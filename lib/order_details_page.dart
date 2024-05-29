@@ -43,12 +43,12 @@ class OrderDetailsPage extends StatelessWidget {
                   radius: 8,
                   backgroundColor: activeStep > index
                       ? theme.colorScheme.primary.withOpacity(0.5)
-                      : Colors.grey.shade400,
+                      : Color.fromARGB(255, 222, 49, 238),
                   child: CircleAvatar(
                     radius: 2.5,
                     backgroundColor: activeStep > index
                         ? theme.colorScheme.primary
-                        : Colors.grey.shade200,
+                        : const Color.fromARGB(255, 223, 37, 37),
                   ),
                 ),
                 title: orderTimelines[index],
