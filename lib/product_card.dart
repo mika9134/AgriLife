@@ -1,8 +1,8 @@
-import 'package:ag/product.dart';
+import '/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-
-import 'package:ag/product_details_page.dart';
+import '/cart_page.dart';
+import '/product_details_page.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({super.key, required this.product});
@@ -20,28 +20,29 @@ class ProductCard extends StatelessWidget {
       },
       child: Card(
         clipBehavior: Clip.antiAlias,
-        shape: RoundedRectangleBorder(
-          borderRadius: const BorderRadius.all(Radius.circular(10)),
-          side: BorderSide(color: Color.fromARGB(255, 241, 238, 39)),
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          side: BorderSide(color: Color.fromARGB(255, 106, 245, 106)),
         ),
-        //elevation: 0.1,
+        elevation: 4,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 1,
+              height: 230,
               alignment: Alignment.topRight,
               width: double.infinity,
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(product.image),
-                  //fit: BoxFit.cover,
+                  //image: AssetImage(product.image),
+                  fit: BoxFit.cover,
                 ),
               ),
               child: SizedBox(
-                //width: 30,
-                //height: 30,
+                width: 30,
+                height: 30,
                 child: IconButton.filledTonal(
                   padding: EdgeInsets.zero,
                   onPressed: () {},
@@ -64,6 +65,7 @@ class ProductCard extends StatelessWidget {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       RichText(
                         text: TextSpan(
@@ -78,11 +80,15 @@ class ProductCard extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        //  width: 30,
-                        // height: 30,
+                        width: 30,
+                        height: 30,
                         child: IconButton.filled(
                           padding: EdgeInsets.zero,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(builder: (_) => CartPage()),
+                            );
+                          },
                           iconSize: 18,
                           icon: const Icon(Icons.add),
                         ),

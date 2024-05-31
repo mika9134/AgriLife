@@ -18,9 +18,9 @@ class OrderItem extends StatelessWidget {
     final theme = Theme.of(context);
     return Card(
       clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(
-        borderRadius: const BorderRadius.all(Radius.circular(10)),
-        side: BorderSide(color: const Color.fromARGB(255, 172, 52, 52)),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+        side: BorderSide(color: Color.fromARGB(255, 52, 114, 172)),
       ),
       elevation: 0.1,
       child: Padding(

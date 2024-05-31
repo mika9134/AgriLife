@@ -16,7 +16,7 @@ class OrderDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final orderTimelines = ['Processing', 'Picking', 'Shipping', 'Delivering'];
+    final orderTimelines = ["Previous order Hisory"];
     int activeStep = 2;
     return Scaffold(
       appBar: AppBar(
@@ -43,12 +43,12 @@ class OrderDetailsPage extends StatelessWidget {
                   radius: 8,
                   backgroundColor: activeStep > index
                       ? theme.colorScheme.primary.withOpacity(0.5)
-                      : Colors.grey.shade400,
+                      : Color.fromARGB(255, 238, 49, 49),
                   child: CircleAvatar(
                     radius: 2.5,
                     backgroundColor: activeStep > index
                         ? theme.colorScheme.primary
-                        : Colors.grey.shade200,
+                        : Color.fromARGB(255, 223, 37, 208),
                   ),
                 ),
                 title: orderTimelines[index],
@@ -143,7 +143,7 @@ class OrderDetailsPage extends StatelessWidget {
                     children: [
                       Text("Payment method"),
                       Text(
-                        "Credit Card **1234",
+                        "accept only Chapa payment",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ],

@@ -1,4 +1,3 @@
-
 import 'dart:math';
 
 import 'package:ag/orders.dart';
@@ -10,7 +9,9 @@ class OrdersPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tabs = ["Processing", "Picking", "Shipping", "Delivering"];
+    final tabs = [
+      "Previous order Hisory",
+    ];
 
     return DefaultTabController(
       length: 4,

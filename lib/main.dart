@@ -1,4 +1,3 @@
-
 // import 'package:animate_do/animate_do.dart';
 // import 'package:flutter/material.dart';
 
@@ -133,10 +132,6 @@
 //   }
 // }
 
-
-
-
-
 import 'package:ag/onboarding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -153,12 +148,12 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 115, 255, 0)),
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 12, 35, 37)),
         useMaterial3: true,
         textTheme: GoogleFonts.nunitoTextTheme(),
       ),
       home: const OnboardingPage(),
-      
-     );
+    );
   }
 }

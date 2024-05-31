@@ -9,6 +9,11 @@ class CartItem extends StatelessWidget {
   const CartItem({super.key, required this.cartItem});
 
   final Product cartItem;
+  // void main() {
+  //   for (int i = 5; i >= 1; i--) {
+  //     print(i);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +65,7 @@ class CartItem extends StatelessWidget {
           clipBehavior: Clip.antiAlias,
           shape: RoundedRectangleBorder(
             borderRadius: const BorderRadius.all(Radius.circular(10)),
-            side: BorderSide(color: Colors.grey.shade200),
+            side: BorderSide(color: Color.fromARGB(255, 57, 187, 226)),
           ),
           elevation: 0.1,
           child: Padding(
@@ -105,41 +110,40 @@ class CartItem extends StatelessWidget {
                                   color: Theme.of(context).colorScheme.primary,
                                 ),
                           ),
-                          SizedBox(
-                            height: 30,
-                            child: ToggleButtons(
-                              borderRadius: BorderRadius.circular(99),
-                              constraints: const BoxConstraints(
-                                minHeight: 30,
-                                minWidth: 30,
-                              ),
-                              selectedColor:
-                                  Theme.of(context).colorScheme.primary,
-                              isSelected: const [
-                                true,
-                                false,
-                                true,
-                              ],
-                              children: [
-                                const Icon(
-                                  Icons.remove,
-                                  size: 20,
-                                ),
-                                Text("${Random().nextInt(5) + 1}"),
-                                const Icon(
-                                  Icons.add,
-                                  size: 20,
-                                ),
-                              ],
-                              onPressed: (int index) {
-                                if (index == 0) {
-                                  // decrease quantity
-                                } else if (index == 2) {
-                                  // increase quantity
-                                }
-                              },
-                            ),
-                          ),
+                          // SizedBox(
+                          //   height: 30,
+                          //   utton(
+                          //     borderRadius: BorderRadius.circular(30),
+                          //     constraints: const BoxConstraints(
+                          //       minHeight: 0,
+                          //       minWidth: 0,
+                          //     ),
+                          //     se(context).colorScheme.primary,
+                          //     isSelected: const [
+                          //       true,
+                          //       false,
+                          //       true,
+                          //     ],
+                          //     [
+                          //       const Icon(
+                          //         Icons.remove,
+                          //         size: 20,
+                          //       ),
+                          //       Text("${Random().nextInt(5) + 1}"),
+                          //       const Icon(
+                          //         Icons.add,
+                          //         size: 20,
+                          //       ),
+                          //     ],
+                          //     onPressed: (int index) {
+                          //       if (index == 0) {
+                          //         // decrease quantity
+                          //       } else if (index == 2) {
+                          //         // increase quantity
+                          //       }
+                          //     },
+                          //   ),
+                          // ),
                         ],
                       )
                     ],

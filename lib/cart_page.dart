@@ -18,7 +18,7 @@ class _CartPageState extends State<CartPage> {
 
   var htpsUri = Uri.parse(
       'http://checkout.chapa.co/checkout/web/payment/SC-mJB5eFHyTNcu'); //print(httpsUri); // https://dart.dev/guides/libraries/library-tour#numbers
-  @override 
+  @override
   Widget build(BuildContext context) {
     final total = cartItems
         .map((cartItem) => cartItem.price)
@@ -53,7 +53,7 @@ class _CartPageState extends State<CartPage> {
                 )
               ],
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 28),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(
@@ -68,8 +68,8 @@ class _CartPageState extends State<CartPage> {
                   // );
                   launchUrl(htpsUri);
                 },
-                label: const Text("Proceed to Checkout"),
-                icon: const Icon(IconlyBold.arrowRight),
+                label: const Text(" Checkout (accept only chapa payment)"),
+                icon: const Icon(IconlyBold.arrowRight, size: 40),
               ),
             )
           ],

@@ -1,4 +1,6 @@
-import 'package:ag/products.dart';
+import 'package:ag/cart_page.dart';
+
+import '/products.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
@@ -52,7 +54,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
         children: [
           Container(
             height: 250,
-            width: double.infinity,
+            width: 400,
             margin: const EdgeInsets.only(bottom: 16),
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -66,7 +68,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
             widget.product.name,
             style: Theme.of(context).textTheme.titleLarge,
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -102,35 +104,35 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                 "${widget.product.rating} (192)",
               ),
               const Spacer(),
-              SizedBox(
-                height: 30,
-                width: 30,
-                child: IconButton.filledTonal(
-                  padding: EdgeInsets.zero,
-                  onPressed: () {},
-                  iconSize: 18,
-                  icon: const Icon(Icons.remove),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
-                child: Text(
-                  "2 ${widget.product.unit}",
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                ),
-              ),
-              SizedBox(
-                height: 30,
-                width: 30,
-                child: IconButton.filledTonal(
-                  padding: EdgeInsets.zero,
-                  onPressed: () {},
-                  iconSize: 18,
-                  icon: const Icon(Icons.add),
-                ),
-              ),
+              // SizedBox(
+              //   height: 30,
+              //   width: 30,
+              //   child: IconButton.filledTonal(
+              //     padding: EdgeInsets.zero,
+              //     onPressed: () {},
+              //     iconSize: 18,
+              //     icon: const Icon(Icons.remove),
+              //   ),
+              // ),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 12),
+              //   child: Text(
+              //     "2 ${widget.product.unit}",
+              //     style: Theme.of(context).textTheme.titleMedium!.copyWith(
+              //           fontWeight: FontWeight.bold,
+              //         ),
+              //   ),
+              // ),
+              // SizedBox(
+              //   height: 30,
+              //   width: 30,
+              //   child: IconButton.filledTonal(
+              //     padding: EdgeInsets.zero,
+              //     onPressed: () {},
+              //     iconSize: 18,
+              //     icon: const Icon(Icons.add),
+              //   ),
+              // ),
             ],
           ),
           const SizedBox(height: 20),
@@ -195,7 +197,13 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
           ),
           const SizedBox(height: 20),
           FilledButton.icon(
-              onPressed: () {},
+              // : () {  // },
+              //onTap:
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => CartPage()),
+                );
+              },
               icon: const Icon(IconlyLight.bag2),
               label: const Text("Add to cart"))
         ],
