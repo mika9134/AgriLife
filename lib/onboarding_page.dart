@@ -1,6 +1,7 @@
 import 'package:ag/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -8,46 +9,86 @@ class OnboardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        minimum: const EdgeInsets.all(20),
-        child: Center(
-          child: Column(
-            children: [
-              const Spacer(),
-              ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 460),
-                child: const Image(
-                  image:
-                      AssetImage('/C:/vsRepo/Agrilife/assets/onboarding.png'),
-                ),
-              ),
-              const Spacer(),
-              Text('Welcome to AgriLife',
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleLarge
-                      ?.copyWith(fontWeight: FontWeight.bold)),
-              const Padding(
-                padding: EdgeInsets.only(top: 30, bottom: 30),
-                child: Text(
-                  "Get your agriculture products from the comfort of your home. You're just a few clicks away from your favorite products.",
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              /**/
-              FilledButton.tonalIcon(
-                onPressed: () {
-                  Navigator.of(context).pushReplacement(CupertinoPageRoute(
-                      builder: (context) => const HomePage()));
-                },
-                icon: const Icon(IconlyLight.login),
-                label: const Text("Continue with Google"),
-              )
-            ],
-          ),
+    return const Scaffold(
+        body: SafeArea(
+      //   minimum: const EdgeInsets.all(20),
+      child: Center(
+        child: Column(
+          children: [
+            //const Spacer(),
+            const Image(
+              image: AssetImage('/C:/vsRepo/Agrilife/assets/plant.jpg'),
+              fit: BoxFit.cover,
+            )
+          ],
         ),
       ),
-    );
+    ));
+    // const Spacer(),
+    //           Text('Welcome to AgriLife',
+    //               style: Theme.of(context)
+    //                   .textTheme
+    //                   .titleLarge
+    //                   ?.copyWith(fontWeight: FontWeight.bold)),
+    //           const Padding(
+    //             padding: EdgeInsets.only(top: 30, bottom: 30),
+    //             child: Text(
+    //               "Get your agriculture products from the comfort of your home. You're just a few clicks away from your favorite products.",
+    //               textAlign: TextAlign.center,
+    //             ),
+    //           ),
+    //           /**/
+    //           FilledButton.tonalIcon(
+    //             onPressed: () {
+    //               Navigator.of(context).pushReplacement(CupertinoPageRoute(
+    //                   builder: (context) => const HomePage()));
+    //             },
+    //             icon: const Icon(IconlyLight.login),
+    //             label: const Text("Continue with Google"),
+    //           )
+    //     ),
+    //   ),
+    // );
+    // return Scaffold(
+    //   body: SafeArea(
+    //     minimum: const EdgeInsets.all(20),
+    //     child: Center(
+    //       child: Column(
+    //         children: [
+    //           const Spacer(),
+    //           ConstrainedBox(
+    //             //constraints: const BoxConstraints(maxWidth: 460),
+    //             child: const Image(
+    //               image:
+    //                   AssetImage('/C:/vsRepo/Agrilife/assets/onboarding.png'),
+    //             ),
+    //           ),
+    //           const Spacer(),
+    //           Text('Welcome to AgriLife',
+    //               style: Theme.of(context)
+    //                   .textTheme
+    //                   .titleLarge
+    //                   ?.copyWith(fontWeight: FontWeight.bold)),
+    //           const Padding(
+    //             padding: EdgeInsets.only(top: 30, bottom: 30),
+    //             child: Text(
+    //               "Get your agriculture products from the comfort of your home. You're just a few clicks away from your favorite products.",
+    //               textAlign: TextAlign.center,
+    //             ),
+    //           ),
+    //           /**/
+    //           FilledButton.tonalIcon(
+    //             onPressed: () {
+    //               Navigator.of(context).pushReplacement(CupertinoPageRoute(
+    //                   builder: (context) => const HomePage()));
+    //             },
+    //             icon: const Icon(IconlyLight.login),
+    //             label: const Text("Continue with Google"),
+    //           )
+    //         ],
+    //       ),
+    //     ),
+    //   ),
+    // );
   }
 }

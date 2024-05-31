@@ -1,7 +1,7 @@
 import '/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-
+import '/cart_page.dart';
 import '/product_details_page.dart';
 
 class ProductCard extends StatelessWidget {
@@ -22,9 +22,9 @@ class ProductCard extends StatelessWidget {
         clipBehavior: Clip.antiAlias,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
-          side: BorderSide(color: Color.fromARGB(255, 241, 238, 39)),
+          side: BorderSide(color: Color.fromARGB(255, 106, 245, 106)),
         ),
-        //elevation: 0.1,
+        elevation: 4,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -84,7 +84,11 @@ class ProductCard extends StatelessWidget {
                         height: 30,
                         child: IconButton.filled(
                           padding: EdgeInsets.zero,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(builder: (_) => CartPage()),
+                            );
+                          },
                           iconSize: 18,
                           icon: const Icon(Icons.add),
                         ),

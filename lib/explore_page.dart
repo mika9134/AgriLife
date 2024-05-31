@@ -53,9 +53,9 @@ class ExplorePage extends StatelessWidget {
             child: SizedBox(
               height: 170,
               child: Card(
-                color: Color.fromARGB(255, 81, 238, 94),
+                color: Color.fromARGB(255, 217, 238, 240),
                 elevation: 0.1,
-                shadowColor: const Color.fromARGB(255, 82, 197, 91),
+                shadowColor: Color.fromARGB(255, 248, 68, 23),
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Row(
@@ -72,7 +72,7 @@ class ExplorePage extends StatelessWidget {
                                   .textTheme
                                   .titleLarge!
                                   .copyWith(
-                                    color: Colors.green.shade700,
+                                    color: Color.fromARGB(255, 15, 50, 56),
                                   ),
                             ),
                             const Text(

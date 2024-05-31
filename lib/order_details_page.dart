@@ -143,7 +143,7 @@ class OrderDetailsPage extends StatelessWidget {
                     children: [
                       Text("Payment method"),
                       Text(
-                        "Credit Card **1234",
+                        "accept only Chapa payment",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ],

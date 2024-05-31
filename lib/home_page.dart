@@ -1,7 +1,7 @@
 import 'package:ag/cart_page.dart';
 import 'package:ag/explore_page.dart';
 import 'package:ag/profile_page.dart';
-import 'package:ag/services_page.dart';
+//import 'package:ag/services_page.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final pages = [
     const ExplorePage(),
-    const ServicesPage(),
+    // const ServicesPage(),
     const CartPage(),
     const ProfilePage()
   ];
@@ -56,13 +56,13 @@ class _HomePageState extends State<HomePage> {
                 badgeContent: const Text(
                   '3',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 170, 209, 219),
                     fontSize: 12,
                   ),
                 ),
                 position: badges.BadgePosition.topEnd(top: -15, end: -12),
                 badgeStyle: const badges.BadgeStyle(
-                  badgeColor: Colors.green,
+                  badgeColor: Color.fromARGB(255, 96, 137, 150),
                 ),
                 child: const Icon(IconlyBroken.notification),
               ),

@@ -1,7 +1,6 @@
-
 import 'dart:ui';
 
-import 'package:ag/services.dart';
+import 'services.dart';
 import 'package:flutter/material.dart';
 
 class ServicesPage extends StatelessWidget {
@@ -35,9 +34,11 @@ class ServicesPage extends StatelessWidget {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
                 child: Container(
-                  padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 238, 11, 11).withOpacity(0.2),
+                    color:
+                        const Color.fromARGB(255, 238, 11, 11).withOpacity(0.2),
                     borderRadius: const BorderRadius.all(Radius.circular(5)),
                   ),
                   child: Text(
