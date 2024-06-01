@@ -87,7 +87,7 @@ class OnboardingPage extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    'Welcome to Agriplant',
+                    'Welcome to AgriLife',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
