@@ -68,7 +68,7 @@ class _CartPageState extends State<CartPage> {
                   // );
                   launchUrl(htpsUri);
                 },
-                label: const Text("Proceed to Checkout"),
+                label: const Text(" Checkout (accept only chapa payment)"),
                 icon: const Icon(IconlyBold.arrowRight, size: 40),
               ),
             )

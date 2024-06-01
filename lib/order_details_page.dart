@@ -16,7 +16,7 @@ class OrderDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final orderTimelines = ['Processing', 'Picking', 'Shipping', 'Delivering'];
+    final orderTimelines = ["Previous order Hisory"];
     int activeStep = 2;
     return Scaffold(
       appBar: AppBar(
@@ -43,12 +43,12 @@ class OrderDetailsPage extends StatelessWidget {
                   radius: 8,
                   backgroundColor: activeStep > index
                       ? theme.colorScheme.primary.withOpacity(0.5)
-                      : Color.fromARGB(255, 222, 49, 238),
+                      : Color.fromARGB(255, 238, 49, 49),
                   child: CircleAvatar(
                     radius: 2.5,
                     backgroundColor: activeStep > index
                         ? theme.colorScheme.primary
-                        : const Color.fromARGB(255, 223, 37, 37),
+                        : Color.fromARGB(255, 223, 37, 208),
                   ),
                 ),
                 title: orderTimelines[index],
