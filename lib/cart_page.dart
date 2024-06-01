@@ -1,7 +1,11 @@
 // import 'dart:io';import 'package:url_launcher/link.dart';
+import 'dart:async';
+
 import 'package:url_launcher/url_launcher.dart';
 import 'package:ag/products.dart';
 import 'package:ag/cart_item.dart';
+//import 'package:cupertino_icons/cupertino_icons.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 //import 'package:linkable/linkable.dart';
@@ -25,6 +29,39 @@ class _CartPageState extends State<CartPage> {
         .reduce((value, element) => value + element)
         .toStringAsFixed(2);
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(
+            Icons.info_outline,
+            size: 22,
+          ), //static const IconData book_circle_fill = IconData(0xf5a0, fontFamily: iconFont, fontPackage: iconFontPackage);
+          onPressed: () {
+            final completer = Completer<bool>();
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                duration: const Duration(seconds: 5),
+                action: SnackBarAction(
+                  label: "OK",
+                  onPressed: () {
+                    completer.complete(false);
+                    ScaffoldMessenger.of(context).removeCurrentSnackBar();
+                  },
+                ),
+                content: const Text(
+                  "Did You Know You can swipe left to remove item from the cart List",
+                ),
+              ),
+            );
+          },
+        ),
+        title: const Text(
+          'DID YOU KNOW ? You can swipe left to remove item from the cart List',
+          style: TextStyle(
+            fontSize: 14.0,
+            color: Color.fromARGB(255, 178, 74, 238),
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -69,7 +106,7 @@ class _CartPageState extends State<CartPage> {
                   launchUrl(htpsUri);
                 },
                 label: const Text(" Checkout (accept only chapa payment)"),
-                icon: const Icon(IconlyBold.arrowRight, size: 40),
+                icon: const Icon(IconlyBold.wallet, size: 25),
               ),
             )
           ],
@@ -78,3 +115,21 @@ class _CartPageState extends State<CartPage> {
     );
   }
 }
+
+void showMyDialog(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (context) => AlertDialog(
+      content: const Text("Swipe to Left to remove from cart"),
+      actions: [
+        IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.done),
+        )
+      ],
+    ),
+  );
+}
+
