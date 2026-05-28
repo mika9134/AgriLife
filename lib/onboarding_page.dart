@@ -73,7 +73,7 @@ class OnboardingPage extends StatelessWidget {
           children: [
             // Background image
             Image.asset(
-              '/C:/vsRepo/Agrilife/assets/pl2.jpg',
+              'assets/pl2.jpg',
               fit: BoxFit.cover,
               height: double.infinity,
               width: double.infinity,
